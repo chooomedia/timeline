@@ -1,0 +1,164 @@
+// abis house-font
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+// abis default dark-ui color variables
+$ng5orange: #FFA92E;
+$ng5grey: #222222;
+$ng5header: #212121;
+$ng5blue: #204aab;
+$ng5green: #8FDD3B;
+$ng5creamWhite: #f9f9f9;
+$background: $ng5grey !default; // $ng5grey
+// $background: #FFFFFF;
+
+body {
+  font-family: 'Arimo', sans-serif;
+
+  .section {
+    background: transparent;
+    margin: 0 auto;
+  }
+
+  .section .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .section h1 {
+    font-size: 2.5rem;
+  }
+
+  .section h2 {
+    font-size: 1.3rem;
+  }
+
+
+  /* TIMELINE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  .timeline {
+    white-space: nowrap;
+    overflow-x: hidden;
+
+    .timelineContent {
+      .border-dots {
+        display: flex;
+        width: 11px;
+        background: url(../assets/images/grey-dots.png);
+        min-height: 8.6em;
+        margin-left: 5px;
+      }
+
+      .border-dots:nth-child(2n) {
+        background: url(../assets/images/orange-dots.png);
+      }
+    }
+  }
+
+  .timeline ol {
+    font-size: 0;
+    width: 100vw;
+    padding: 250px 0;
+    transition: all 1s;
+  }
+
+  .timeline ol li {
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    width: calc(100%/5);
+    height: 3px;
+    background: $ng5orange;
+  }
+
+  .timeline ol li:last-child {
+    width: 280px;
+  }
+
+  .timeline ol li:not(:first-child) {
+    margin-left: 14px;
+  }
+
+  .timeline ol li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    bottom: 0;
+    width: 64px;
+    height: 64px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: url(../assets/images/abis-timeline-ball.png) no-repeat center center;
+  }
+
+  .timeline ol li div {
+    position: absolute;
+    left: calc(100% + 7px);
+    width: 320px;
+    padding: 15px;
+    font-size: 1rem;
+    white-space: normal;
+    color: $ng5grey;
+    background: transparent;
+  }
+
+  .timeline ol li div::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  .timeline ol li:nth-child(odd) div {
+    top: -16px;
+    transform: translateY(-100%);
+  }
+
+  .timeline ol li:nth-child(odd) div::before {
+    top: 100%;
+    border-width: 8px 8px 0 0;
+    border-color: white transparent transparent transparent;
+  }
+
+  .timeline ol li:nth-child(even) div {
+    top: calc(100% + 16px);
+  }
+
+  .timeline ol li:nth-child(even) div::before {
+    top: -8px;
+    border-width: 8px 0 0 8px;
+    border-color: transparent transparent transparent white;
+  }
+
+  .timeline time {
+    color: $ng5orange !important;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    left: -33%;
+    position: relative;
+
+    &:nth-child(2n) {
+      color: $ng5grey !important;
+    }
+  }
+
+  /* TIMELINE ARROWS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  .timeline .arrows {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .timeline .arrows .arrow__prev {
+    margin-right: 20px;
+  }
+}
