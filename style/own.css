@@ -37,10 +37,21 @@ body .timeline .info-box {
   line-height: 32px;
   font-size: 1.4em;
   font-weight: 600;
-  width: 10em;
-  top: 29.75%;
-  margin: 1em;
+  width: 100%;
+  top: 33%;
+  padding: 0 32px;
   position: absolute;
+}
+
+body .timeline .info-box span:first-of-type {
+  padding-right: 0;
+  width: 10%;
+}
+
+body .timeline .info-box span {
+  display: inline-block;
+  width: 21%;
+  padding-right: 16%;
 }
 
 body .timeline .timelineContent .border-dots {
@@ -142,7 +153,8 @@ body .timeline ol li:nth-child(even) div::before {
 body .timeline time {
   color: #FFA92E !important;
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  line-height: 22px;
   font-weight: bold;
   left: -33%;
   position: relative;
