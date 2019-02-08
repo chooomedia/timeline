@@ -33,6 +33,16 @@ body .timeline {
   overflow-x: hidden;
 }
 
+body .timeline .info-box {
+  line-height: 32px;
+  font-size: 1.4em;
+  font-weight: 600;
+  width: 10em;
+  top: 29.75%;
+  margin: 1em;
+  position: absolute;
+}
+
 body .timeline .timelineContent .border-dots {
   display: -webkit-box;
   display: -ms-flexbox;
