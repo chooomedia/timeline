@@ -2,8 +2,13 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo");
 body {
   font-family: 'Arimo', sans-serif;
+  color: #f9f9f9;
+  background: #222222;
   /* TIMELINE
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /*.timeline ol li:not(:first-child) {
+    margin-left: 14px;
+  }*/
   /* TIMELINE ARROWS
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 }
@@ -59,7 +64,7 @@ body .timeline .timelineContent .border-dots {
   display: -ms-flexbox;
   display: flex;
   width: 11px;
-  background: url(../assets/images/grey-dots.png);
+  background: url(../assets/images/creamWhite-dots.png);
   min-height: 8.6em;
   margin-left: 5px;
 }
@@ -89,10 +94,6 @@ body .timeline ol li:last-child {
   width: 280px;
 }
 
-body .timeline ol li:not(:first-child) {
-  margin-left: 14px;
-}
-
 body .timeline ol li:not(:last-child)::after {
   content: '';
   position: absolute;
@@ -104,7 +105,7 @@ body .timeline ol li:not(:last-child)::after {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   border-radius: 50%;
-  background: url(../assets/images/abis-timeline-ball.png) no-repeat center center;
+  background: url(../assets/images/abis-timeline-ball-creamWhite.png) no-repeat center center;
 }
 
 body .timeline ol li div {
@@ -114,7 +115,7 @@ body .timeline ol li div {
   padding: 15px;
   font-size: 1rem;
   white-space: normal;
-  color: #222222;
+  color: #f9f9f9;
   background: transparent;
 }
 
@@ -161,7 +162,7 @@ body .timeline time {
 }
 
 body .timeline time:nth-child(2n) {
-  color: #222222 !important;
+  color: #f9f9f9 !important;
 }
 
 body .timeline .arrows {
