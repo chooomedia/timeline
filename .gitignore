@@ -1,2 +1,4 @@
+# Ignore these
+
 /.vscode
-assets/images/.xcf
+assets/images/*.xcf
