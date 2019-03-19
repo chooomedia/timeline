@@ -87,7 +87,7 @@ body .timeline ol li {
   list-style-type: none;
   width: calc(100%/5);
   height: 3px;
-  background: #FFA92E;
+  background: #f9f9f9;
 }
 
 body .timeline ol li:last-child {
